@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="entity">
+	<class name="Users" table="USERS" >
+		<id name="uid" column="uid" >
+			<generator class="native"/>
+		</id>
+		<property name="username" type="string" column="username" />
+		<property name="password" type="string" column="password" />
+	</class>
+</hibernate-mapping>
